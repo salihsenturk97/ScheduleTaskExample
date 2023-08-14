@@ -1,0 +1,2 @@
+scheduled:
+  cron: "0 59 14 * * *"

@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 public class ScheduledTasks {
     private static final Logger logger = LoggerFactory.getLogger(ScheduledTasks.class);
 
-    @Scheduled(cron = "0 59 14 * * *")
+    @Scheduled(cron = "${scheduled.cron}")
     public void performTask() {
         try {
             logger.info("Task performed at {}", LocalDateTime.now());
